@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins',sans-serif; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    padding: 12px;
+}
+
+.accurium_number {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.accurium_number h2 {
+    margin: 5px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+b {
+    color: darkorange;
+}
+
+input {
+    width: 15%;
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid dodgerblue;
+    background-color: #d5d5d5;
+    padding: 10px;
+    padding-left: 45px;
+    border-radius: 2px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.numbers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    margin-left: 67%;
+    margin-top: 2%;
+    grid-gap: 20px;
+}
+
+.numbers span {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* border-radius: 50%; */
+    gap: 10px;
+    background: #7e6c6c;
+    background-color: #d3d0d0;
+    font-size: 22px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
+    user-select: none;
+}
+
+.numbers span:active {
+    background-color: #fff;
+}
+
+.random_accurecy {
+    width: 100%;
+    padding: 20px;
+}
+
+.box {
+    width: 25%;
+    height: 400px;
+    background-color: #d5d5d5;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+#bar {
+    width: 100%;
+    /* height: 50%; */
+    background: dodgerblue;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media (max-width:500px) {
+    .accurium_number h2 {
+        text-align: center;
+        font-size: 1.15rem;
+        font-weight: 500;
+    }
+
+    .container {
+        width: 100%;
+        grid-template-columns: 100%;
+        flex-direction: row-reverse;
+    }
+
+    input {
+        padding-left: 48px;
+        width: 40%;
+    }
+
+    .numbers {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 28%;
+        gap: 60px;
+
+    }
+    .box {
+        margin-left: 40%;
+    }
+}
